@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Evaluation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff59d; /* Background color */
+            color: #333; /* Text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #000; /* Heading color */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 50%; /* Set maximum width of image */
+            height: 50%%; /* Maintain aspect ratio */
+        }
+
+        .caption {
+            font-style: italic;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teaching Evaluation Results</h1>
+    
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='teaching_results/countplotodsumm.png') }}" alt="Count Plot of SUMM">
+        <p class="caption">Count Plot of SUMM: This plot illustrates the distribution of SUMM values among students.</p>
+    </div>
+    
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='teaching_results/gendervaluecountofdata.png') }}" alt="Gender Value Count of Data">
+        <p class="caption">Gender Value Count of Data: This plot shows the count of each gender category in the dataset.</p>
+    </div>
+    
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='teaching_results/plotrepresentsthecourse,exp_gpa,cuml_gpa,prep_exam.png') }}" alt="Plot Representing Course, EXP_GPA, CUML_GPA, Prep_Exam">
+        <p class="caption">Plot Representing Course, EXP_GPA, CUML_GPA, Prep_Exam: This plot represents the relationship between course, expected GPA, cumulative GPA, and preparation for the exam.</p>
+    </div>
+    
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='teaching_results/plotrepresentwork,scholarship.png') }}" alt="Plot Representing Work, Scholarship">
+        <p class="caption">Plot Representing Work, Scholarship: This plot illustrates the correlation between work and scholarship factors.</p>
+    </div>
+    
+</body>
+</html>

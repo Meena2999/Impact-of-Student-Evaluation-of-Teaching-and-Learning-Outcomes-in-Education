@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Prediction Form</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #83a944;
+            color: #000;
+        }
+        h1 {
+            text-align: center;
+            color: #f4ffdc;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #f4ffdc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        select, input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #83a944;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #628436;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Prediction Form</h1>
+        <form action="/student_prediction" method="post">
+        <label for="student_id">Student ID:</label>
+        <input type="text" id="student_id" name="student_id" required><br>
+
+        <label for="age">Age:</label>
+        <select id="age" name="age">
+            <option value="1">18-21</option>
+            <option value="2">22-25</option>
+            <option value="3">above 26</option>
+        </select><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="1">female</option>
+            <option value="2">male</option>
+        </select><br>
+
+        <label for="study_hrs">Study Hours:</label>
+        <select id="study_hrs" name="study_hrs">
+            <option value="1">None</option>
+            <option value="2">&lt;5 hours</option>
+            <option value="3">6-10 hours</option>
+            <option value="4">11-20 hours</option>
+            <option value="5">more than 20 hours</option>
+        </select><br>
+
+        <label for="read_freq">Reading Frequency (non-scientific books/journals):</label>
+        <select id="read_freq" name="read_freq">
+            <option value="1">None</option>
+            <option value="2">Sometimes</option>
+            <option value="3">Often</option>
+        </select><br>
+
+        <label for="impact">Impact:</label>
+        <select id="impact" name="impact">
+            <option value="1">Positive</option>
+            <option value="2">Negative</option>
+            <option value="3">Neutral</option>
+        </select><br>
+
+        <label for="attend">Attendance:</label>
+        <select id="attend" name="attend">
+            <option value="1">Always</option>
+            <option value="2">Sometimes</option>
+            <option value="3">Never</option>
+        </select><br>
+
+        <label for="prep_study">Preparation Study:</label>
+        <select id="prep_study" name="prep_study">
+            <option value="1">Alone</option>
+            <option value="2">With Friends</option>
+            <option value="3">Not Applicable</option>
+        </select><br>
+
+        <label for="prep_exam">Preparation Exam:</label>
+        <select id="prep_exam" name="prep_exam">
+            <option value="1">Closest Date to the Exam</option>
+            <option value="2">Regularly During the Semester</option>
+            <option value="3">Never</option>
+        </select><br>
+
+        <label for="notes">Taking Notes:</label>
+        <select id="notes" name="notes">
+            <option value="1">Never</option>
+            <option value="2">Sometimes</option>
+            <option value="3">Always</option>
+        </select><br>
+
+        <label for="listens">Listening in Classes:</label>
+        <select id="listens" name="listens">
+            <option value="1">Never</option>
+            <option value="2">Sometimes</option>
+            <option value="3">Always</option>
+        </select><br>
+
+        <label for="cuml_gpa">Cumulative GPA in Last Semester:</label>
+        <select id="cuml_gpa" name="cuml_gpa">
+            <option value="1">&lt;2.00</option>
+            <option value="2">2.00-2.49</option>
+            <option value="3">2.50-2.99</option>
+            <option value="4">3.00-3.49</option>
+            <option value="5">Above 3.49</option>
+        </select><br>
+
+        <label for="exp_gpa">Expected Cumulative GPA in Graduation:</label>
+        <select id="exp_gpa" name="exp_gpa">
+            <option value="1">&lt;2.00</option>
+            <option value="2">2.00-2.49</option>
+            <option value="3">2.50-2.99</option>
+            <option value="4">3.00-3.49</option>
+            <option value="5">Above 3.49</option>
+        </select><br>
+
+        <label for="course_id">Course ID:</label>
+        <input type="number" id="course_id" name="course_id" required><br>
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
